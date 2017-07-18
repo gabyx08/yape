@@ -1,5 +1,9 @@
 .boton--amarillo {
   background-color: #fbd43b; }
 
+div.carousel.carousel-slider.center.initialized {
+  height: 50vh !important;
+  margin-top: 20vh; }
+
 .carousel .carousel-item > img {
   width: 40%; }

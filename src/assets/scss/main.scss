@@ -14,6 +14,11 @@ $morado-dark : #38052a;
   }
 }
 
+div.carousel.carousel-slider.center.initialized{
+  height: 50vh !important;
+  margin-top: 20vh;
+}
+
 .carousel{
   .carousel-item{
     >img {
