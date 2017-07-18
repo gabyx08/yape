@@ -5,8 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Yale</title>
+  <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
-  <h1>hola</h1>
+  <section class="center">
+    <img src="../assets/img/icons/phone.png" alt="">
+    <h2>Para comenzar validemos tu número</h2>
+    <p>Recibirás un SMS con código de validación</p>
+    <form action="#">
+      <p>
+        <label for="num">número(+52)</label>
+        <input id="num" type="text" class="validate">
+      </p>
+      <p>
+        <input type="checkbox" id="terminos" />
+        <label for="terminos">Acepto los <span>Términos y condiciones.</span></label>
+      </p>
+      <input type="submit" value="Continuar" class="boton--amarillo" disabled>
+    </form>
+  </section>
+  <script src="../static/jquery/dist/jquery.min.js"></script>
+  <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="../assets/js/app.js"></script>
 </body>
 </html>
