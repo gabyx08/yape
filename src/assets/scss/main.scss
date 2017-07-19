@@ -22,7 +22,31 @@ div.carousel.carousel-slider.center.initialized{
 .carousel{
   .carousel-item{
     >img {
-      width: 40%;
+      width: 25vh;
     }
   }
+}
+
+.pantalla-2{
+  margin: 15vh 8vh;
+  .img-size{
+    width: 20vh;
+  }
+  .titulo{
+    font-size: 25px;
+  }
+  .texto{
+    font-size: 15px;
+  }
+  .ingresa-numero{
+    &_label{
+      width: 10vh;
+      position: absolute;
+    }
+  }
+  .terminos-condiciones{
+    &_texto{
+    color: $turquesa-terminosYcondiciones;
+    }
+   }
 }

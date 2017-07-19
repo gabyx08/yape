@@ -6,4 +6,18 @@ div.carousel.carousel-slider.center.initialized {
   margin-top: 20vh; }
 
 .carousel .carousel-item > img {
-  width: 40%; }
+  width: 25vh; }
+
+.pantalla-2 {
+  margin: 15vh 8vh; }
+  .pantalla-2 .img-size {
+    width: 20vh; }
+  .pantalla-2 .titulo {
+    font-size: 25px; }
+  .pantalla-2 .texto {
+    font-size: 15px; }
+  .pantalla-2 .ingresa-numero_label {
+    width: 10vh;
+    position: absolute; }
+  .pantalla-2 .terminos-condiciones_texto {
+    color: #00c3a3; }

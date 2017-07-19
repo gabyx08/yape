@@ -9,20 +9,18 @@
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
-  <section class="center">
-    <img src="../assets/img/icons/phone.png" alt="">
-    <h2>Para comenzar validemos tu número</h2>
-    <p>Recibirás un SMS con código de validación</p>
+  <section class="pantalla-2 center">
+    <img src="../assets/img/icons/phone.png" alt="phone" class="img-size">
+    <h2 class="titulo">Para comenzar validemos tu número</h2>
+    <p class="texto">Recibirás un SMS con código de validación</p>
     <form action="#">
-      <p>
-        <label for="num">número(+52)</label>
-        <input id="num" type="text" class="validate">
+        <label for="num"><img src="../assets/img/icons/phoneandnumber.png" alt="phone"class="ingresa-numero_label"></label>
+        <input id="num" type="tel" class="ingresa-numero center">
+      <p class="center" class="terminos-condiciones">
+        <input type="checkbox" class="filled-in" id="terminos" />
+        <label for="terminos">Acepto los <span class="terminos-condiciones_texto">Términos y condiciones.</span></label>
       </p>
-      <p>
-        <input type="checkbox" id="terminos" />
-        <label for="terminos">Acepto los <span>Términos y condiciones.</span></label>
-      </p>
-      <input type="submit" value="Continuar" class="boton--amarillo" disabled>
+      <input type="submit" value="Continuar" class="btn" disabled>
     </form>
   </section>
   <script src="../static/jquery/dist/jquery.min.js"></script>
