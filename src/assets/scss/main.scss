@@ -15,7 +15,7 @@ $morado-dark : #38052a;
 }
 
 div.carousel.carousel-slider.center.initialized{
-  height: 50vh !important;
+  min-height: 50vh;
   margin-top: 20vh;
 }
 
@@ -23,6 +23,14 @@ div.carousel.carousel-slider.center.initialized{
   .carousel-item{
     >img {
       width: 25vh;
+    }
+  }
+  .indicators{
+    .indicator-item{
+      background-color: $gris-letra-soft;
+       .active{
+        background-color: $rojo-bullet;
+      }
     }
   }
 }

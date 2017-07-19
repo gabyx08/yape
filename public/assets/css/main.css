@@ -2,11 +2,16 @@
   background-color: #fbd43b; }
 
 div.carousel.carousel-slider.center.initialized {
-  height: 50vh !important;
+  min-height: 50vh;
   margin-top: 20vh; }
 
 .carousel .carousel-item > img {
   width: 25vh; }
+
+.carousel .indicators .indicator-item {
+  background-color: #8f8f8f; }
+  .carousel .indicators .indicator-item .active {
+    background-color: #f64552; }
 
 .pantalla-2 {
   margin: 15vh 8vh; }

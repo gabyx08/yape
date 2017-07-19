@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Yale</title>
   <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="../static/sweetalert/dist/sweetalert.css">
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
@@ -18,13 +19,14 @@
         <input id="numero" type="tel" class="ingresa-numero center">
       <p class="center" class="terminos-condiciones">
         <input type="checkbox" class="filled-in" id="terminos" />
-        <label for="terminos">Acepto los <span class="terminos-condiciones_texto">Términos y condiciones.</span></label>
+        <label for="terminos">Acepto los <a href="#" class="terminos-condiciones_texto">Términos y condiciones.</a></label>
       </p>
       <input type="submit" value="Continuar" class="btn" id="btnNumero" disabled>
     </form>
   </section>
   <script src="../static/jquery/dist/jquery.min.js"></script>
   <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="../static/sweetalert/dist/sweetalert.min.js"></script>
   <script src="../assets/js/number.js"></script>
 </body>
 </html>
