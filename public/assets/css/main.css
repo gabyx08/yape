@@ -13,16 +13,24 @@ div.carousel.carousel-slider.center.initialized {
   .carousel .indicators .indicator-item .active {
     background-color: #f64552; }
 
-.pantalla-2 {
+.pantalla-2, .pantalla-codigo {
   margin: 15vh 8vh; }
-  .pantalla-2 .img-size {
+  .pantalla-2 .img-size, .pantalla-codigo .img-size {
     width: 20vh; }
-  .pantalla-2 .titulo {
-    font-size: 25px; }
-  .pantalla-2 .texto {
-    font-size: 15px; }
-  .pantalla-2 .ingresa-numero_label {
+  .pantalla-2 .titulo, .pantalla-codigo .titulo {
+    font-size: 25px;
+    color: #212121; }
+  .pantalla-2 .texto, .pantalla-codigo .texto {
+    font-size: 15px;
+    color: #8f8f8f; }
+  .pantalla-2 .ingresa_label, .pantalla-codigo .ingresa_label {
     width: 10vh;
     position: absolute; }
-  .pantalla-2 .terminos-condiciones_texto {
+  .pantalla-2 .terminos-condiciones_texto, .pantalla-codigo .terminos-condiciones_texto {
     color: #00c3a3; }
+
+.pantalla-codigo .ingresa_label {
+  width: 4vh; }
+
+.pantalla-codigo .clock {
+  width: 4vh; }

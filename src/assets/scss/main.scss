@@ -42,11 +42,13 @@ div.carousel.carousel-slider.center.initialized{
   }
   .titulo{
     font-size: 25px;
+    color: $gris-dark;
   }
   .texto{
     font-size: 15px;
+    color: $gris-letra-soft
   }
-  .ingresa-numero{
+  .ingresa{
     &_label{
       width: 10vh;
       position: absolute;
@@ -57,4 +59,16 @@ div.carousel.carousel-slider.center.initialized{
     color: $turquesa-terminosYcondiciones;
     }
    }
+}
+
+.pantalla-codigo{
+  @extend .pantalla-2;
+  .ingresa{
+    &_label{
+      width: 4vh;
+    }
+  }
+  .clock{
+    width: 4vh;
+  }
 }

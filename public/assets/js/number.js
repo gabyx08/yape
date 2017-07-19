@@ -34,15 +34,20 @@ var agregarNumero = function(e){
     "phone": telefono,
     "terms": terminos
   }).then(function(res){
-    console.log(res.message);
-    if(res.message === "Usuario válido"){
-      location.href = "codigo.html";
+    console.log(res);
+     if(res.message === "Usuario válido"){
+       var codigo = res.data.code.toString();
+        swal( codigo ,"Codigo de validación","success")
+        $(document).on("click",$(".confirm")[0],redireccionarPag)
     } else {
       swal(res.message , "Ingresa otro número :)", "error");
     }
   }).catch(function(error){
-    console.log(error)
+    console.log(error);
   })
 };
 
+var redireccionarPag = function(){
+  location.href = "codigo.html";
+}
 $(document).ready(cargarPagina);
