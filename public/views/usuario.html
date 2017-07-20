@@ -4,9 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Yape</title>
+  <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
-  <h1>crear usuario</h1>
+  <section class="crearUsuario center">
+    <img src="../assets/img/icons/lockone.png" alt="lock" class="img-size">
+    <h2 class="titulo">Crea tu usuario Yape</h2>
+    <p class="texto">Ingresa un nombre, email y clave de usuario</p>
+    <form action="#" id="usuario">
+      <p>
+        <label for="nombre"><img src="../assets/img/icons/user.png" alt="phone"class="ingresa_label"></label>
+        <input id="nombre" type="text" class="ingresa center">
+      </p>
+      <p class="center">
+        <label for="email"><img src="../assets/img/icons/message-gray.png" alt="phone"class="ingresa_label"></label>
+        <input id="email" type="email" class="ingresa center">
+      </p>
+      <p class="center">
+        <label for="contraseña"><img src="../assets/img/icons/lock.png" alt="phone"class="ingresa_label"></label>
+        <input id="contraseña" type="password" class="ingresa center">
+      </p>
+      <p class="center texto">Cuida esta clave como oro, es tu acceso a Yape.</p>
+      <input type="submit" value="Crear Cuenta" class="btn" id="btnNumero" disabled>
+    </form>
+  </section>
+  <script src="../static/jquery/dist/jquery.min.js"></script>
+  <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="../assets/js/usuario.js"></script>
 </body>
 </html>

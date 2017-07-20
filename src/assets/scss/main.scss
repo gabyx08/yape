@@ -76,3 +76,13 @@ div.carousel.carousel-slider.center.initialized{
     color: $gris-dark;
   }
 }
+
+.crearUsuario{
+  @extend .pantalla-2;
+  margin: 5vh 8vh;
+  .ingresa{
+    &_label{
+      width: 4vh;
+    }
+  }
+}

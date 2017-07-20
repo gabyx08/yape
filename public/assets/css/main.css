@@ -13,20 +13,20 @@ div.carousel.carousel-slider.center.initialized {
   .carousel .indicators .indicator-item .active {
     background-color: #f64552; }
 
-.pantalla-2, .pantalla-codigo {
+.pantalla-2, .pantalla-codigo, .crearUsuario {
   margin: 15vh 8vh; }
-  .pantalla-2 .img-size, .pantalla-codigo .img-size {
+  .pantalla-2 .img-size, .pantalla-codigo .img-size, .crearUsuario .img-size {
     width: 20vh; }
-  .pantalla-2 .titulo, .pantalla-codigo .titulo {
+  .pantalla-2 .titulo, .pantalla-codigo .titulo, .crearUsuario .titulo {
     font-size: 25px;
     color: #212121; }
-  .pantalla-2 .texto, .pantalla-codigo .texto {
+  .pantalla-2 .texto, .pantalla-codigo .texto, .crearUsuario .texto {
     font-size: 15px;
     color: #8f8f8f; }
-  .pantalla-2 .ingresa_label, .pantalla-codigo .ingresa_label {
+  .pantalla-2 .ingresa_label, .pantalla-codigo .ingresa_label, .crearUsuario .ingresa_label {
     width: 10vh;
     position: absolute; }
-  .pantalla-2 .terminos-condiciones_texto, .pantalla-codigo .terminos-condiciones_texto {
+  .pantalla-2 .terminos-condiciones_texto, .pantalla-codigo .terminos-condiciones_texto, .crearUsuario .terminos-condiciones_texto {
     color: #00c3a3; }
 
 .pantalla-codigo .ingresa_label {
@@ -38,3 +38,8 @@ div.carousel.carousel-slider.center.initialized {
 .pantalla-codigo .tel {
   font-size: 16px;
   color: #212121; }
+
+.crearUsuario {
+  margin: 5vh 8vh; }
+  .crearUsuario .ingresa_label {
+    width: 4vh; }
