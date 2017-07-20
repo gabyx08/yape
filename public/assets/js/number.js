@@ -1,6 +1,6 @@
 var cargarPagina = function(){
   $("#numero").keyup(validarNumero);
-  $("#formNumero").submit(agregarNumero)
+  $("#formNumero").submit(agregarNumero);
 };
 
 var validarNumero = function() {
@@ -20,6 +20,7 @@ var validarCheckbox = function(){
   //Con el método .prop() se obtiene el valor de la propiedad checked con jquery
   if($checkbox.prop("checked")){
       $boton.removeAttr("disabled");
+      $boton.attr("class", "boton--amarillo btn");
    } else {
      $boton.attr("disabled", true);
   }
@@ -35,12 +36,14 @@ var agregarNumero = function(e){
     "terms": terminos
   }).then(function(res){
     console.log(res);
+    var codigoApi = res.data.code.toString();
+    var telefonoApi = res.data.phone;
      if(res.message === "Usuario válido"){
-       var codigo = res.data.code.toString();
-        swal( codigo ,"Codigo de validación","success")
-        $(document).on("click",$(".confirm")[0],redireccionarPag)
+        swal( codigoApi ,"Codigo de validación","success"); //alert con codigo de validacion
+        $(document).on("click",$(".confirm")[0],redireccionarPag);
+        guardarDatos(codigoApi,telefonoApi)
     } else {
-      swal(res.message , "Ingresa otro número :)", "error");
+      swal(res.message , "Ingresa otro número :)", "error"); //alert con mensaje de error "el telefono ya existe"
     }
   }).catch(function(error){
     console.log(error);
@@ -48,6 +51,13 @@ var agregarNumero = function(e){
 };
 
 var redireccionarPag = function(){
-  location.href = "codigo.html";
+  var html = "codigo.html"
+  location.href = html;
 }
+
+var guardarDatos = function(codigoApi, telefonoApi){
+  localStorage.setItem('codigo', codigoApi);
+  localStorage.setItem('telefono', telefonoApi);
+}
+
 $(document).ready(cargarPagina);

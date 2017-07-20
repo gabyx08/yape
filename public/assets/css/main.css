@@ -34,3 +34,7 @@ div.carousel.carousel-slider.center.initialized {
 
 .pantalla-codigo .clock {
   width: 4vh; }
+
+.pantalla-codigo .tel {
+  font-size: 16px;
+  color: #212121; }

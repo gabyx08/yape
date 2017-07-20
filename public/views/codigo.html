@@ -6,22 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="../static/sweetalert/dist/sweetalert.css">
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
   <section class="pantalla-codigo center">
     <img src="../assets/img/icons/message.png" alt="message" class="img-size">
     <h2 class="titulo">Ahora ingresa tu código</h2>
-    <p class="texto">Enviamos un SMS con el código al número <span>______</span></p>
+    <p class="texto">Enviamos un SMS con el código al número <span id="telefonoHtml">______</span></p>
     <form action="#" id="formCodigo">
         <label for="codigo"><img src="../assets/img/icons/lock.png" alt="lock"class="ingresa_label"></label>
-        <input id="codigo" type="tel" class="ingresa center">
+        <input id="codigoHtml" type="tel" class="ingresa center">
       <p class="center texto" class="terminos-condiciones">
-        Reintentar en <img src="../assets/img/icons/clock.png" alt="clock" class="clock"><span class="contador">21</span> seg.
+        Reintentar en <img src="../assets/img/icons/clock.png" alt="clock" class="clock"><span id="tiempo">21</span> seg.
       </p>
     </form>
   </section>
   <script src="../static/jquery/dist/jquery.min.js"></script>
   <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="../assets/js/codigo.js"></script></body>
+  <script src="../static/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../assets/js/number.js"></script>
+  <script src="../assets/js/codigo.js"></script>
+</body>
 </html>
