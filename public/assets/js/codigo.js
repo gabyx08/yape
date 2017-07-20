@@ -19,8 +19,6 @@ var temporizador = function(tempo){
 };
 
 var mostrarTelefonoUsuario = function(){
-  console.log(telefonoUsuario)
-
   $("#telefonoHtml").html(telefonoUsuario);
   $("#telefonoHtml").attr("class", "tel");
 };
@@ -45,7 +43,6 @@ var validarCodigo = function(codigoUsuario){
 };
 
 var obtenerCodigoNuevo = function(){
-  alert("hola")
   $.post("http://localhost:3000/api/resendCode",{
     "phone": telefonoUsuario,
   }).then(function(res){
@@ -57,7 +54,7 @@ var obtenerCodigoNuevo = function(){
   }).catch(function(error){
     console.log(error);
   })
-  contador = 21;
+    contador = 21;
 };
 
 $(document).ready(cargarPagina);
