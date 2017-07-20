@@ -28,9 +28,9 @@ div.carousel.carousel-slider.center.initialized{
   .indicators{
     .indicator-item{
       background-color: $gris-letra-soft;
-       .active{
-        background-color: $rojo-bullet;
-      }
+    }
+    .indicatir-item.active{
+       background-color: $rojo-bullet;
     }
   }
 }
@@ -85,4 +85,20 @@ div.carousel.carousel-slider.center.initialized{
       width: 4vh;
     }
   }
+}
+
+.fondo--amarillo{
+  background-color: $amarillo-botones;
+}
+
+.creado{
+  margin: 25vh 8vh;
+    .texto{
+      font-size: 22px;
+      color: $gris-dark;
+      font-weight: bold;
+    }
+    .img-size{
+      width: 25vh;
+    }
 }

@@ -10,8 +10,9 @@ div.carousel.carousel-slider.center.initialized {
 
 .carousel .indicators .indicator-item {
   background-color: #8f8f8f; }
-  .carousel .indicators .indicator-item .active {
-    background-color: #f64552; }
+
+.carousel .indicators .indicatir-item.active {
+  background-color: #f64552; }
 
 .pantalla-2, .pantalla-codigo, .crearUsuario {
   margin: 15vh 8vh; }
@@ -43,3 +44,15 @@ div.carousel.carousel-slider.center.initialized {
   margin: 5vh 8vh; }
   .crearUsuario .ingresa_label {
     width: 4vh; }
+
+.fondo--amarillo {
+  background-color: #fbd43b; }
+
+.creado {
+  margin: 25vh 8vh; }
+  .creado .texto {
+    font-size: 22px;
+    color: #212121;
+    font-weight: bold; }
+  .creado .img-size {
+    width: 25vh; }

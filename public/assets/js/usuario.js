@@ -1,21 +1,50 @@
+var telefonoUsuario = localStorage.getItem('telefono');
+var usuario = {};
 var cargarPagina = function(){
-  $('.ingresa').keyup(validarInputs)
+  $('.ingresa').keyup(validarInputs);
+  $('#crearCuenta').click(enviarDatos);
 };
 
 var validarInputs = function(){
-  var $nombre = $('#nombre').val();
-  var $email = $('#email');
-  var $contraseña = $('#contraseña');
+    usuario.nombre = $('#nombre').val();
+    usuario.email = $('#email').val();
+    usuario.contraseña = $('#contraseña').val();
+
   var emailRegex = new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
 
-  if($nombre.trim().length > 0){
-    if ($contraseña.val().length === 6) {
-      if (emailRegex.test($email.val())) {
+  if (usuario.contraseña.length === 6) {
+    if (emailRegex.test(usuario.email)){
+      if (usuario.nombre.trim().length > 0){
         $('#crearCuenta').removeAttr("disabled");
         $('#crearCuenta').attr("class", "boton--amarillo btn");
+      }else{
+        $('#crearCuenta').attr("disabled", true);
       }
+    }else{
+      $('#crearCuenta').attr("disabled", true);
     }
+  }else{
+    $('#crearCuenta').attr("disabled", true);
   }
+};
+
+var enviarDatos = function(e){
+  e.preventDefault();
+  console.log(usuario)
+  console.log(telefonoUsuario)
+
+  $.post("http://localhost:3000/api/createUser",{
+    "phone": telefonoUsuario,
+    "name": usuario.nombre,
+    "email": usuario.email,
+    "password": usuario.contraseña
+  }).then(function(res){
+    console.log(res);
+    setTimeout(function(){ location.href = "ok.html"}, 2000);
+  }).catch(function(error){
+    console.log(error);
+  })
+
 };
 
 $(document).ready(cargarPagina);
