@@ -134,12 +134,12 @@ div.carousel.carousel-slider.center.initialized{
 
 .movimientos{
   background-color: $morado-dark;
-  width: 60vh;
-  padding: 5vh 4vh 0 4vh;
+  height: 60vh;
+  padding: 5vh 4vh;
   color: white;
   margin: 0;
   img{
-    width: 80%;
+    width: 100%;
     .arrow{
       width: 3vh;
     }
