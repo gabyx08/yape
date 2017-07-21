@@ -11,23 +11,23 @@ div.carousel.carousel-slider.center.initialized {
 .carousel .indicators .indicator-item {
   background-color: #8f8f8f; }
 
-.carousel .indicators .indicatir-item.active {
+.carousel .indicators .indicator-item.active {
   background-color: #f64552; }
 
-.pantalla-2, .pantalla-codigo, .crearUsuario {
+.pantalla-2, .pantalla-codigo, .crearUsuario, .tarjeta {
   margin: 15vh 8vh; }
-  .pantalla-2 .img-size, .pantalla-codigo .img-size, .crearUsuario .img-size {
+  .pantalla-2 .img-size, .pantalla-codigo .img-size, .crearUsuario .img-size, .tarjeta .img-size {
     width: 20vh; }
-  .pantalla-2 .titulo, .pantalla-codigo .titulo, .crearUsuario .titulo {
+  .pantalla-2 .titulo, .pantalla-codigo .titulo, .crearUsuario .titulo, .tarjeta .titulo {
     font-size: 25px;
     color: #212121; }
-  .pantalla-2 .texto, .pantalla-codigo .texto, .crearUsuario .texto {
+  .pantalla-2 .texto, .pantalla-codigo .texto, .crearUsuario .texto, .tarjeta .texto {
     font-size: 15px;
     color: #8f8f8f; }
-  .pantalla-2 .ingresa_label, .pantalla-codigo .ingresa_label, .crearUsuario .ingresa_label {
+  .pantalla-2 .ingresa_label, .pantalla-codigo .ingresa_label, .crearUsuario .ingresa_label, .tarjeta .ingresa_label {
     width: 10vh;
     position: absolute; }
-  .pantalla-2 .terminos-condiciones_texto, .pantalla-codigo .terminos-condiciones_texto, .crearUsuario .terminos-condiciones_texto {
+  .pantalla-2 .terminos-condiciones_texto, .pantalla-codigo .terminos-condiciones_texto, .crearUsuario .terminos-condiciones_texto, .tarjeta .terminos-condiciones_texto {
     color: #00c3a3; }
 
 .pantalla-codigo .ingresa_label {
@@ -40,9 +40,9 @@ div.carousel.carousel-slider.center.initialized {
   font-size: 16px;
   color: #212121; }
 
-.crearUsuario {
+.crearUsuario, .tarjeta {
   margin: 5vh 8vh; }
-  .crearUsuario .ingresa_label {
+  .crearUsuario .ingresa_label, .tarjeta .ingresa_label {
     width: 4vh; }
 
 .fondo--amarillo {
@@ -56,3 +56,9 @@ div.carousel.carousel-slider.center.initialized {
     font-weight: bold; }
   .creado .img-size {
     width: 25vh; }
+
+.tarjeta .texto--azul {
+  color: #00c3a3; }
+
+.tarjeta .img-scan {
+  width: 3vh; }

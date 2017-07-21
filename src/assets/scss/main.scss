@@ -21,7 +21,7 @@ div.carousel.carousel-slider.center.initialized{
     .indicator-item{
       background-color: $gris-letra-soft;
     }
-    .indicatir-item.active{
+    .indicator-item.active{
        background-color: $rojo-bullet;
     }
   }
@@ -93,4 +93,14 @@ div.carousel.carousel-slider.center.initialized{
     .img-size{
       width: 25vh;
     }
+}
+
+.tarjeta{
+  @extend .crearUsuario;
+  .texto--azul{
+    color:$turquesa-terminosYcondiciones;
+  }
+  .img-scan{
+    width: 3vh;
+  }
 }
