@@ -45,8 +45,6 @@ var agregarNumero = function(e){
     } else {
       swal(res.message , "Ingresa otro número :)", "error"); //alert con mensaje de error "el telefono ya existe"
     }
-  }).catch(function(error){
-    console.log(error);
   })
 };
 

@@ -30,7 +30,7 @@ var registrarTarjeta = function(e){
   console.log(userId, cardNumber, cardMonth, cardYear, cardPassword )
 
   $.post("http://localhost:3000/api/registerCard",{
-    'userId' : userId,
+    'phone' : userId,
     'cardNumber' : cardNumber,
     'cardMonth' : cardMonth,
     'cardYear' : cardYear,
@@ -38,13 +38,18 @@ var registrarTarjeta = function(e){
   }).then(function(res){
     console.log(res);
      if(res.message === "Tarjeta añadida correctamente"){
-        swal(res.message,"success");
+        swal(res.message,"","success");
+        $(document).on("click",$(".confirm")[0],redireccionarPag);
     } else {
       swal("Error", res.message , "error");
     }
   }).catch(function(error){
     console.log(error);
   })
+};
+
+var redireccionarPag = function(){
+  location.href="hola.html";
 };
 
 $(document).ready(cargarPagina);

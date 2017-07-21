@@ -32,7 +32,7 @@ var validarLongitudCodigo = function(){
 };
 
 var validarCodigo = function(codigoUsuario){
-  
+
     if(codigoUsuario.val() == codigoValidacion){
       location.href = "usuario.html";
     }else{

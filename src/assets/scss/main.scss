@@ -121,3 +121,27 @@ div.carousel.carousel-slider.center.initialized{
     left: 10%;
   }
 }
+
+.hola{
+  background-color: $morado-light;
+  height: 40vh;
+  margin: 0;
+  padding-top: 3vh;
+  color: white;
+  font-size: 18px;
+  @extend .tarjeta;
+}
+
+.movimientos{
+  background-color: $morado-dark;
+  width: 60vh;
+  padding: 5vh 4vh 0 4vh;
+  color: white;
+  margin: 0;
+  img{
+    width: 80%;
+    .arrow{
+      width: 3vh;
+    }
+  }
+}
