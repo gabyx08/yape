@@ -17,7 +17,7 @@
     <form action="#" id="formTarjeta" class="container">
       <p>
         <label for="numeroTarjeta"><img src="../assets/img/icons/card.png" alt="card" class="ingresa_label"></label>
-        <input id="numeroTarjeta" type="number" class="ingresa center validate" pattern="[0-9]{16}">
+        <input id="numeroTarjeta" type="number" class="ingresa center validate" pattern="[0-9]{16}" maxlength="16">
       </p>
       <p class="center texto--azul">
         <img src="../assets/img/icons/scan.png" alt="scan" class="img-scan">
@@ -25,9 +25,9 @@
       </p>
       <div class="row center">
         <p class="texto col s5 center"> Fecha de vencimiento  </p>
-        <input id="mes" type="number" min="1" max="12"class="center validate ingresa col s2">
+        <input id="mes" type="number" min="1" max="12" maxlength="2" class="center validate ingresa col s2">
         <p class="texto col s1 center"> / </p>
-        <input id="año" type="number" min="17" max="24" class="center validate ingresa col s2">
+        <input id="año" type="number" min="17" max="24" maxlength="2" class="center validate ingresa col s2">
       </div>
       <input type="submit" value="Continuar" class="btn" id="btnTarjeta" disabled>
     </form>

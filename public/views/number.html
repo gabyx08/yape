@@ -16,9 +16,9 @@
     <p class="texto">Recibirás un SMS con código de validación</p>
     <form action="#" id="formNumero">
         <label for="numero"><img src="../assets/img/icons/phoneandnumber.png" alt="phone"class="ingresa_label"></label>
-        <input id="numero" type="tel" class="ingresa center">
+        <input id="numero" type="tel" class="ingresa center validate" pattern="[0-9]{10}" maxlength="10" required>
       <p class="center" class="terminos-condiciones">
-        <input type="checkbox" class="filled-in" id="terminos" />
+        <input type="checkbox" class="filled-in" id="terminos" required/>
         <label for="terminos">Acepto los <a href="#" class="terminos-condiciones_texto">Términos y condiciones.</a></label>
       </p>
       <input type="submit" value="Continuar" class="btn" id="btnNumero" disabled>

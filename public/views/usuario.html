@@ -16,15 +16,15 @@
     <form action="#" id="usuario">
       <p>
         <label for="nombre"><img src="../assets/img/icons/user.png" alt="user" class="ingresa_label"></label>
-        <input id="nombre" type="text" class="ingresa center" placeholder="Nombre">
+        <input id="nombre" type="text" class="ingresa center" placeholder="Nombre" required>
       </p>
       <p>
         <label for="email"><img src="../assets/img/icons/message-gray.png" alt="email" class="ingresa_label"></label>
-        <input id="email" type="email" class="validate ingresa center" placeholder="correo@ejemplo.com">
+        <input id="email" type="email" class="validate ingresa center" placeholder="correo@ejemplo.com" required>
       </p>
       <p>
         <label for="contraseña"><img src="../assets/img/icons/lock.png" alt="lock"class=" ingresa_label"></label>
-        <input id="contraseña" type="password" class="ingresa center" placeholder="Ingresa clave de 6 digitos">
+        <input id="contraseña" type="password" class="ingresa center validate" placeholder="Ingresa clave de 6 digitos" maxlength="6" required>
       </p>
       <p class="center texto">Cuida esta clave como oro, es tu acceso a Yape.</p>
       <input type="submit" value="Crear Cuenta" class="btn" id="crearCuenta" disabled>
