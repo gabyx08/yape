@@ -40,8 +40,7 @@ var enviarDatos = function(e){
     "password": usuario.contraseña
   }).then(function(res){
     console.log(res);
-    //puse la funcion setTimeout unos segundos para ver la respuesta de la api en la consola
-    setTimeout(function(){ location.href = "ok.html"}, 2000);
+    location.href = "ok.html";
   }).catch(function(error){
     console.log(error);
   })
