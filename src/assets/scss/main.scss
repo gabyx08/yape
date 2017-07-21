@@ -103,4 +103,21 @@ div.carousel.carousel-slider.center.initialized{
   .img-scan{
     width: 3vh;
   }
+  .img-question{
+    @extend .img-scan;
+    position: absolute;
+    right: 10%;
+    margin-bottom: 10%;
+  }
+}
+
+.passtarj{
+  @extend .tarjeta;
+  .volver{
+    color: $gris-dark;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 10%;
+  }
 }

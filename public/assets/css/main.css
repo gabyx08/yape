@@ -14,20 +14,20 @@ div.carousel.carousel-slider.center.initialized {
 .carousel .indicators .indicator-item.active {
   background-color: #f64552; }
 
-.pantalla-2, .pantalla-codigo, .crearUsuario, .tarjeta {
+.pantalla-2, .pantalla-codigo, .crearUsuario, .tarjeta, .passtarj {
   margin: 15vh 8vh; }
-  .pantalla-2 .img-size, .pantalla-codigo .img-size, .crearUsuario .img-size, .tarjeta .img-size {
+  .pantalla-2 .img-size, .pantalla-codigo .img-size, .crearUsuario .img-size, .tarjeta .img-size, .passtarj .img-size {
     width: 20vh; }
-  .pantalla-2 .titulo, .pantalla-codigo .titulo, .crearUsuario .titulo, .tarjeta .titulo {
+  .pantalla-2 .titulo, .pantalla-codigo .titulo, .crearUsuario .titulo, .tarjeta .titulo, .passtarj .titulo {
     font-size: 25px;
     color: #212121; }
-  .pantalla-2 .texto, .pantalla-codigo .texto, .crearUsuario .texto, .tarjeta .texto {
+  .pantalla-2 .texto, .pantalla-codigo .texto, .crearUsuario .texto, .tarjeta .texto, .passtarj .texto {
     font-size: 15px;
     color: #8f8f8f; }
-  .pantalla-2 .ingresa_label, .pantalla-codigo .ingresa_label, .crearUsuario .ingresa_label, .tarjeta .ingresa_label {
+  .pantalla-2 .ingresa_label, .pantalla-codigo .ingresa_label, .crearUsuario .ingresa_label, .tarjeta .ingresa_label, .passtarj .ingresa_label {
     width: 10vh;
     position: absolute; }
-  .pantalla-2 .terminos-condiciones_texto, .pantalla-codigo .terminos-condiciones_texto, .crearUsuario .terminos-condiciones_texto, .tarjeta .terminos-condiciones_texto {
+  .pantalla-2 .terminos-condiciones_texto, .pantalla-codigo .terminos-condiciones_texto, .crearUsuario .terminos-condiciones_texto, .tarjeta .terminos-condiciones_texto, .passtarj .terminos-condiciones_texto {
     color: #00c3a3; }
 
 .pantalla-codigo .ingresa_label {
@@ -40,9 +40,9 @@ div.carousel.carousel-slider.center.initialized {
   font-size: 16px;
   color: #212121; }
 
-.crearUsuario, .tarjeta {
+.crearUsuario, .tarjeta, .passtarj {
   margin: 5vh 8vh; }
-  .crearUsuario .ingresa_label, .tarjeta .ingresa_label {
+  .crearUsuario .ingresa_label, .tarjeta .ingresa_label, .passtarj .ingresa_label {
     width: 4vh; }
 
 .fondo--amarillo {
@@ -57,8 +57,20 @@ div.carousel.carousel-slider.center.initialized {
   .creado .img-size {
     width: 25vh; }
 
-.tarjeta .texto--azul {
+.tarjeta .texto--azul, .passtarj .texto--azul {
   color: #00c3a3; }
 
-.tarjeta .img-scan {
+.tarjeta .img-scan, .passtarj .img-scan, .tarjeta .img-question, .passtarj .img-question {
   width: 3vh; }
+
+.tarjeta .img-question, .passtarj .img-question {
+  position: absolute;
+  right: 10%;
+  margin-bottom: 10%; }
+
+.passtarj .volver {
+  color: #212121;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 10%; }
