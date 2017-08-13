@@ -29,7 +29,7 @@ var registrarTarjeta = function(e){
 
   console.log(userId, cardNumber, cardMonth, cardYear, cardPassword )
 
-  $.post("http://localhost:3000/api/registerCard",{
+  $.post("https://yape-validacion.herokuapp.com/api/registerCard",{
     'phone' : userId,
     'cardNumber' : cardNumber,
     'cardMonth' : cardMonth,

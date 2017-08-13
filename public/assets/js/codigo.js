@@ -42,7 +42,7 @@ var validarCodigo = function(codigoUsuario){
 };
 
 var obtenerCodigoNuevo = function(){
-  $.post("http://localhost:3000/api/resendCode",{
+  $.post("https://yape-validacion.herokuapp.com/api/resendCode",{
     "phone": telefonoUsuario,
   }).then(function(res){
     console.log(res);

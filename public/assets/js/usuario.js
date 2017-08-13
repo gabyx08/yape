@@ -33,7 +33,7 @@ var enviarDatos = function(e){
   console.log(usuario)
   console.log(telefonoUsuario)
 
-  $.post("http://localhost:3000/api/createUser",{
+  $.post("https://yape-validacion.herokuapp.com/api/createUser",{
     "phone": telefonoUsuario,
     "name": usuario.nombre,
     "email": usuario.email,

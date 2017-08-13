@@ -31,7 +31,7 @@ var agregarNumero = function(e){
   var telefono = $("#numero").val();
   var terminos = $("#terminos").prop("checked");
 
-  $.post("http://localhost:3000/api/registerNumber",{
+  $.post("https://yape-validacion.herokuapp.com/api/registerNumber",{
     "phone": telefono,
     "terms": terminos
   }).then(function(res){
